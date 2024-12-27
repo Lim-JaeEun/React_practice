@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 80px;
+}
+.tit{
+  margin-top: 50px; margin-bottom: 0;
+}
+.todoItem {
+  width: 500px;
+  height: 50px;
+  border-bottom: 3px dotted skyblue;
+  display: flex;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  padding-bottom: 17px;
+}
+.wrap {display: flex; align-items: center;}
+.input_area {
+  width: 400px;
+  height: 30px;
+  border: 2px solid #d7d7d7;
+  border-radius: 7px;
+  text-align: center;
+}
+.btn{
+  margin-left: 10px;
+  background: #ffffff;
+  width: 54px;
+  height: 30px;
+  border-radius: 7px;
+  border: 2px solid #d7d7d7;
+  font-weight: 900;
+  color: #4b4b4b;
+  cursor: pointer;
+}
+.remove_btn {
+  font-size: 11px;
+  position: absolute;
+  right: 10px;
+  border: 0;
+  cursor: pointer;
+  color: #4c4c4c;
+  bottom: 5px;
+  background-color: transparent;
+}
+.id_num {
+  position: absolute;
+  left: 20px;
+  font-weight: lighter;
+  bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.chk {
+  position: absolute;
+  left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.on {
+  background-color: #8080801f;
+}
+
+.edit_btn {
+  bottom: 5px;
+  position: absolute;
+  right: 60px;
+  font-size: 11px;
+  color: #4c4c4c;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.edit_box input{
+  width: 250px;
+  border: 0;
+  border-bottom: 1px solid #626262;
+}
+.edit_box input:focus {
+  outline: 0;
+}
+.save_btn {
+  position: absolute;
+  right: 10px;
+  font-size: 11px;
+  background: transparent;
+  border: 0;
+  color: #4c4c4c;
+  bottom: 5px;
+  cursor: pointer;
 }
